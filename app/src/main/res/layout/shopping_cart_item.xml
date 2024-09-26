@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="Product Image"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:layout_marginStart="20px"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/productImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textSize="16sp"
+            android:layout_marginStart="20px"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/productNameTextView"
+            app:layout_constraintStart_toEndOf="@id/productImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Quantity Controls -->
+
+        <!-- Remove Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toEndOf="@id/productImageView"
+            app:layout_constraintTop_toBottomOf="@id/productPriceTextView">
+
+            <ImageView
+                android:id="@+id/increaseQuantityButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Increase Quantity"
+                android:src="@drawable/ic_increase" />
+
+            <TextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Quantity: 1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/decreaseQuantityButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Decrease Quantity"
+                android:src="@drawable/ic_decrease" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/removeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_remove"
+            android:contentDescription="Remove Item"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

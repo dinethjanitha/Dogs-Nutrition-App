@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.productcatalog.ProductCatalogFragment">
+
+    <SearchView
+        android:id="@+id/productSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:queryHint="Search Products" />
+
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:layout_below="@id/productSearchView"
+        android:entries="@array/filter_options" />
+
+    <Spinner
+        android:id="@+id/sortSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/filterSpinner"
+        android:layout_below="@id/productSearchView"
+        android:entries="@array/sort_options" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filterSpinner"
+        android:padding="20dp" />
+
+</RelativeLayout>

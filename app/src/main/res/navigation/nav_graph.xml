@@ -1,0 +1,81 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dogsnutrition.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_product_detail"
+            app:destination="@id/nav_product_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_detail"
+        android:name="com.example.dogsnutrition.ui.productcatalog.ProductDetailFragment"
+        android:label="Product Detail"
+        tools:layout="@layout/fragment_product_detail" />
+    <fragment
+        android:id="@+id/nav_product_catalog"
+        android:name="com.example.dogsnutrition.ui.productcatalog.ProductCatalogFragment"
+        android:label="Product Catalog"
+        tools:layout="@layout/fragment_product_catalog" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.dogsnutrition.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_educational_content"
+        android:name="com.example.dogsnutrition.ui.educationalcontent.EducationalContentFragment"
+        android:label="Educational Content"
+        tools:layout="@layout/fragment_educational_content" />
+    <fragment
+        android:id="@+id/nav_order_history"
+        android:name="com.example.dogsnutrition.ui.orderhistory.OrderHistoryFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/nav_admin_section"
+        android:name="com.example.dogsnutrition.ui.adminsection.AdminSectionFragment"
+        android:label="Admin Section"
+        tools:layout="@layout/fragment_admin_section" />
+    <fragment
+        android:id="@+id/nav_add_product"
+        android:name="com.example.dogsnutrition.ui.adminsection.AddProductFragment"
+        android:label="Add Product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/nav_manage_products"
+        android:name="com.example.dogsnutrition.ui.adminsection.ManageProductsFragment"
+        android:label="Manage Products"
+        tools:layout="@layout/fragment_manage_products" />
+    <fragment
+        android:id="@+id/nav_add_user"
+        android:name="com.example.dogsnutrition.ui.adminsection.AddUserFragment"
+        android:label="Add User"
+        tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/nav_manage_users"
+        android:name="com.example.dogsnutrition.ui.adminsection.ManageUsersFragment"
+        android:label="Manage Users"
+        tools:layout="@layout/fragment_manage_users" />
+    <fragment
+        android:id="@+id/nav_update_user"
+        android:name="com.example.dogsnutrition.ui.adminsection.UpdateUserFragment"
+        android:label="Update User"
+        tools:layout="@layout/fragment_update_user" />
+    <fragment
+        android:id="@+id/nav_update_product"
+        android:name="com.example.dogsnutrition.ui.adminsection.UpdateProductFragment"
+        android:label="Update Product"
+        tools:layout="@layout/fragment_update_product" />
+    <fragment
+        android:id="@+id/nav_shopping_cart"
+        android:name="com.example.dogsnutrition.ui.shoppingcart.ShoppingCartFragment"
+        android:label="Shopping Cart"
+        tools:layout="@layout/fragment_shopping_cart" />
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price" />
+
+    <EditText
+        android:id="@+id/brandEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand" />
+
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age Group" />
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_imgplc" />
+</LinearLayout>

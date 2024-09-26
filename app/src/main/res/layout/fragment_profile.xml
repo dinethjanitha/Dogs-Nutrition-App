@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/profileuser"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:background="@drawable/profileuser"
+        android:elevation="4dp"
+        android:clipToOutline="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:enabled="false"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        style="@style/Widget.MaterialComponents.Button" />
+</LinearLayout>

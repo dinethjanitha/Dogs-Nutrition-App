@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Product Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Description -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Price -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Brand -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/brandEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Type -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/typeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Age Group -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age Group" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_imgplc"
+            android:contentDescription="Product Image"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- Select Image Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <!-- Update Product Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.MaterialComponents.Button" />
+    </LinearLayout>
+</ScrollView>
